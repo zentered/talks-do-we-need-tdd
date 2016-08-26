@@ -1,0 +1,56 @@
+{
+  "name": "tdd",
+  "author": "Patrick Heneise <patrick@blended.io>",
+  "description": "Do we really need to learn TDD?",
+  "scripts": {
+    "dev": "nodemon --watch http --watch core --watch libs --watch api.js api.js | bunyan",
+    "start": "node api.js",
+    "pretest": "standard",
+    "coverage": "npm run coverage -s -- --reporter=text-lcov | coveralls",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "NODE_ENV=test nyc tap --no-cov ./tests/{unit,integration}/{**,**/**}-test.js",
+    "test:watch": "npm run pretest && NODE_ENV=test gaze 'bin/watch-and-test.sh $path' 'tests/**/*.js' '*.js' 'api/**/*.js' 'core/**/*.js' 'libs/**/*.js'",
+    "postsemantic-release": "npm run coverage",
+    "postpublish": "greenkeeper-postpublish"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bunyan": "^1.8.0",
+    "express": "^4.14.0",
+    "method-override": "^2.3.5",
+    "validator": "^5.5.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.12",
+    "gaze": "^1.0.0",
+    "gaze-cli": "^0.2.0",
+    "ghooks": "^1.3.2",
+    "greenkeeper": "^3.2.0",
+    "greenkeeper-postpublish": "^1.0.1",
+    "nodemon": "^1.10.2",
+    "nyc": "^8.1.0",
+    "semantic-release": "^4.3.5",
+    "standard": "^8.0.0",
+    "supertest": "^2.0.0",
+    "tap": "^6.3.2",
+    "tape": "^4.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blended/do-we-need-tdd.git"
+  },
+  "nyc": {
+    "exclude": [
+      "node_modules",
+      "tests",
+      "config",
+      "libs",
+      "api.js"
+    ],
+    "lines": 80,
+    "cache": true,
+    "all": true,
+    "check-coverage": true
+  },
+  "license": "MIT"
+}
