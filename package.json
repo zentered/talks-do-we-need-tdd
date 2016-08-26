@@ -1,5 +1,5 @@
 {
-  "name": "beginners-tdd-workshop-by-blended",
+  "name": "@patrickheneise/beginners-tdd-workshop-by-blended",
   "author": "Patrick Heneise <patrick@blended.io>",
   "description": "Do we really need to learn TDD?",
   "scripts": {
