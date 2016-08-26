@@ -48,7 +48,7 @@
       "libs",
       "api.js"
     ],
-    "lines": 80,
+    "lines": 0,
     "cache": true,
     "all": true,
     "check-coverage": true
