@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/blended/do-we-need-tdd/badge.svg?branch=master)](https://coveralls.io/github/blended/talks-do-we-need-tdd?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/blended/talks-do-we-need-tdd/badge.svg?branch=master)](https://coveralls.io/github/blended/talks-do-we-need-tdd?branch=master)
 [![npm version](https://badge.fury.io/js/beginners-tdd-workshop-by-blended.svg)](https://badge.fury.io/js/beginners-tdd-workshop-by-blended)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
