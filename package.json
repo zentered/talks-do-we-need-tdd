@@ -29,7 +29,7 @@
     "greenkeeper": "^4.1.0",
     "greenkeeper-postpublish": "^1.0.1",
     "nodemon": "^1.10.2",
-    "nyc": "^9.0.1",
+    "nyc": "^10.0.0",
     "semantic-release": "^4.3.5",
     "standard": "^8.0.0",
     "supertest": "^2.0.0",
