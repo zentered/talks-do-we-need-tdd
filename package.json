@@ -30,7 +30,7 @@
     "greenkeeper-postpublish": "^1.0.1",
     "nodemon": "^1.10.2",
     "nyc": "^10.0.0",
-    "semantic-release": "^4.3.5",
+    "semantic-release": "^6.3.2",
     "standard": "^8.0.0",
     "supertest": "^2.0.0",
     "tap": "^8.0.0",
