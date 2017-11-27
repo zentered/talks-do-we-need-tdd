@@ -5,6 +5,8 @@
 
 # If the code deserves to be written, it deserves to have tests.
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/heneise/talks-do-we-need-tdd.svg)](https://greenkeeper.io/)
+
 ## Introduction
 ### Why?
 > Before you implement,
